@@ -16,10 +16,10 @@ export default function BentoGridDemo() {
   return (
     <div className="min-h-screen bg-black text-white">
       {/* Header Bar */}
-      <header className="w-full px-6 py-2 flex justify-between items-center border-b border-neutral-800 mb-8">
+      <header className="w-full px-4 sm:px-6 py-2 flex flex-col sm:flex-row justify-between items-center border-b border-neutral-800 mb-4 sm:mb-8 gap-2">
         <div>
-          <h1 className="text-xl font-semibold">Ritam Maity</h1>
-          <p className="text-sm text-neutral-400">Software Developer</p>
+          <h1 className="text-xl font-semibold text-center sm:text-left">Ritam Maity</h1>
+          <p className="text-sm text-neutral-400 text-center sm:text-left">Software Developer</p>
         </div>
         <div className="flex items-center gap-4">
           <a
@@ -48,30 +48,30 @@ export default function BentoGridDemo() {
       </header>
 
       {/* Main Content */}
-      <main className="max-w-7xl mx-auto px-8">
+      <main className="max-w-7xl mx-auto px-4 sm:px-8">
         {/* Hero Space */}
         <HeroSpace />
 
         {/* About and Features Grid Section */}
-        <div className="flex gap-4 mb-4">
-          <div className="w-[400px]">
+        <div className="flex flex-col lg:flex-row gap-4 mb-4">
+          <div className="w-full lg:w-[400px] mb-4 lg:mb-0">
             <About className="h-full" />
           </div>
-          <Featuregrid />
+          <Featuregrid className="w-full" />
         </div>
 
         {/* Projects and Right Side Sections */}
-        <div className="grid grid-cols-4 gap-4">
+        <div className="grid grid-cols-1 lg:grid-cols-4 gap-4">
           {/* Projects Section */}
-          <Projects className="col-span-3 h-[500px]" />
+          <Projects className="lg:col-span-3 h-[500px]" />
 
           {/* Right Side Sections */}
-          <div className="space-y-4 col-span-1">
-            <LatestWork className="h-[160px]" />
-
-            <CV className="h-[160px]" />
-
-            <Research className="h-[160px]" />
+          <div className="space-y-4 lg:col-span-1">
+            <div className="grid grid-cols-3 gap-4 lg:grid-cols-1">
+              <LatestWork className="h-[160px]" />
+              <CV className="h-[160px]" />
+              <Research className="h-[160px]" />
+            </div>
           </div>
         </div>
       </main>
