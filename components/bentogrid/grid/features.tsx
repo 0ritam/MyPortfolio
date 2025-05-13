@@ -27,52 +27,48 @@ export default function Featuregrid({ className }: { className?: string }) {
       {/* Second row - Links section */}
       <div className="mt-3 grid grid-cols-1 sm:grid-cols-3 gap-3">
         {/* Small link widget on left */}
-        <div className="col-span-1">
+        <div className="sm:col-span-1">
           <BentoGridItem
             title="Link"
             description="Small link widget"
             icon={<IconLink className="h-4 w-4 text-neutral-500" />}
-            className="h-[180px] sm:h-[160px]"
+            className="h-[160px]"
           />
         </div>
         {/* 2x2 grid of links on right */}
-        <div className="col-span-1 sm:col-span-2">
-          <div className="grid grid-cols-2 gap-3 h-[180px] sm:h-[160px]">
-            <div className="grid grid-rows-2 gap-3">
-              <BentoGridItem
-                title="LinkedIn"
-                description="Professional"
-                icon={<IconLink className="h-4 w-4 text-neutral-500" />}
-                className="h-full"
-              />
-              <BentoGridItem
-                title="Twitter"
-                description="Social updates"
-                icon={<IconLink className="h-4 w-4 text-neutral-500" />}
-                className="h-full"
-              />
-            </div>
-            <div className="grid grid-rows-2 gap-3">
-              <BentoGridItem
-                title="Reddit"
-                description="Discussions"
-                icon={<IconLink className="h-4 w-4 text-neutral-500" />}
-                className="h-full"
-              />
-              <BentoGridItem
-                title="Web"
-                description="Portfolio"
-                icon={<IconLink className="h-4 w-4 text-neutral-500" />}
-                className="h-full"
-              />
-            </div>
+        <div className="sm:col-span-2">
+          <div className="grid grid-cols-2 grid-rows-2 gap-3">
+            <BentoGridItem
+              title="LinkedIn"
+              description="Professional"
+              icon={<IconLink className="h-4 w-4 text-neutral-500" />}
+              className="h-[75px]"
+            />
+            <BentoGridItem
+              title="Twitter"
+              description="Social updates"
+              icon={<IconLink className="h-4 w-4 text-neutral-500" />}
+              className="h-[75px]"
+            />
+            <BentoGridItem
+              title="Reddit"
+              description="Discussions"
+              icon={<IconLink className="h-4 w-4 text-neutral-500" />}
+              className="h-[75px]"
+            />
+            <BentoGridItem
+              title="Web"
+              description="Portfolio"
+              icon={<IconLink className="h-4 w-4 text-neutral-500" />}
+              className="h-[75px]"
+            />
           </div>
         </div>
       </div>
 
       {/* Third row */}
       <div className="mt-3 grid grid-cols-1 sm:grid-cols-3 gap-3">
-        <div className="col-span-1 sm:col-span-2">
+        <div className="sm:col-span-2">
           <BentoGridItem
             title="Tech Stack"
             description="Technology stack showcase"
@@ -80,7 +76,7 @@ export default function Featuregrid({ className }: { className?: string }) {
             className="h-[160px]"
           />
         </div>
-        <div className="col-span-1">
+        <div className="sm:col-span-1">
           <BentoGridItem
             title="Books"
             description="Reading and learning"
