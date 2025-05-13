@@ -50,20 +50,19 @@ export default function BentoGridDemo() {
       {/* Main Content */}
       <main className="max-w-7xl mx-auto px-8">
         {/* Hero Space */}
-
         <HeroSpace />
 
-        {/* About and Status Row */}
-        <div className="grid grid-cols-5 gap-4 mb-4">
-          <About className="col-span-2 h-[200px]" />
-
-          <Featuregrid className="col-span-3 h-[200px]" />
+        {/* About and Features Grid Section */}
+        <div className="flex gap-4 mb-4">
+          <div className="w-[400px]">
+            <About className="h-full" />
+          </div>
+          <Featuregrid />
         </div>
 
         {/* Projects and Right Side Sections */}
         <div className="grid grid-cols-4 gap-4">
           {/* Projects Section */}
-
           <Projects className="col-span-3 h-[500px]" />
 
           {/* Right Side Sections */}
