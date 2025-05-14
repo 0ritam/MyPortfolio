@@ -112,6 +112,54 @@
   --sidebar-ring: oklch(0.705 0.015 286.067);
 }
 
+
+@tailwind utilities;
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes scroll-reverse {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.animate-scroll {
+  animation: scroll 20s linear infinite;
+}
+
+.animate-scroll-reverse {
+  animation: scroll-reverse 20s linear infinite;
+}
+
+/* Ensure smooth animation performance */
+.animate-scroll,
+.animate-scroll-reverse {
+  will-change: transform;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Hide scrollbar for the marquee */
+.overflow-x-hidden::-webkit-scrollbar {
+  display: none;
+}
+.overflow-x-hidden {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
 @layer base {
   * {
     @apply border-border outline-ring/50;

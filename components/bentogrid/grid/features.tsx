@@ -1,5 +1,6 @@
 import { BentoGridItem } from '@/components/ui/bento-grid';
 import { IconBriefcase, IconCode, IconBrandGithub, IconMusic, IconLink, IconStack, IconMessage, IconBook } from '@tabler/icons-react';
+import { StacksCard } from './cards/stack-card';
 
 export default function Featuregrid({ className }: { className?: string }) {
   return (
@@ -67,14 +68,10 @@ export default function Featuregrid({ className }: { className?: string }) {
       </div>
 
       {/* Third row */}
-      <div className="mt-3 grid grid-cols-1 sm:grid-cols-3 gap-3">
-        <div className="sm:col-span-2">
-          <BentoGridItem
-            title="Tech Stack"
-            description="Technology stack showcase"
-            icon={<IconStack className="h-4 w-4 text-neutral-500" />}
-            className="h-[160px]"
-          />
+      <div className="mt-3 grid grid-cols-1 sm:grid-cols-3 gap-3">        <div className="sm:col-span-2">
+          <BentoGridItem className="h-[160px] overflow-hidden flex items-center justify-center p-2">
+            <StacksCard />
+          </BentoGridItem>
         </div>
         <div className="sm:col-span-1">
           <BentoGridItem
