@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@phosphor-icons/react": "^2.1.7",
     "@radix-ui/react-slot": "^1.2.2",
     "@tabler/icons-react": "^3.31.0",
     "class-variance-authority": "^0.7.1",
@@ -16,6 +17,7 @@
     "lucide-react": "^0.508.0",
     "motion": "^12.10.1",
     "next": "15.3.2",
+    "phosphor-icons": "^1.4.2",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-simple-typewriter": "^5.0.1",

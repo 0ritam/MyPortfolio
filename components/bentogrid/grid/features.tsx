@@ -1,6 +1,8 @@
 import { BentoGridItem } from '@/components/ui/bento-grid';
 import { IconBriefcase, IconCode, IconBrandGithub, IconMusic, IconLink, IconStack, IconMessage, IconBook } from '@tabler/icons-react';
 import { StacksCard } from './cards/stack-card';
+import GithubLink from './cards/github-link';
+
 
 export default function Featuregrid({ className }: { className?: string }) {
   return (
@@ -8,12 +10,9 @@ export default function Featuregrid({ className }: { className?: string }) {
       {/* First row - GitHub sections */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-6 gap-3">
         <div className="sm:col-span-1 lg:col-span-3">
-          <BentoGridItem
-            title="GitHub Link"
-            description="My experiments (aka projects)"
-            icon={<IconBrandGithub className="h-4 w-4 text-neutral-500" />}
-            className="h-[200px]"
-          />
+          <BentoGridItem className="h-[200px] overflow-hidden flex items-center justify-center">
+            <GithubLink />
+          </BentoGridItem>
         </div>
         <div className="sm:col-span-1 lg:col-span-3">
           <BentoGridItem
@@ -69,7 +68,7 @@ export default function Featuregrid({ className }: { className?: string }) {
 
       {/* Third row */}
       <div className="mt-3 grid grid-cols-1 sm:grid-cols-3 gap-3">        <div className="sm:col-span-2">
-          <BentoGridItem className="h-[160px] overflow-hidden flex items-center justify-center p-2">
+          <BentoGridItem className="h-[160px] overflow-hidden flex items-center justify-center">
             <StacksCard />
           </BentoGridItem>
         </div>
