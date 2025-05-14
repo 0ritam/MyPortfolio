@@ -33,7 +33,7 @@ export function NextIcon(props: SVGProps<SVGSVGElement>) {
             offset="1"
             className="text-white dark:text-black"
             stopColor="currentColor"
-            stop-opacity="0"
+            stopOpacity="0"
           ></stop>
         </linearGradient>
         <linearGradient
@@ -53,7 +53,7 @@ export function NextIcon(props: SVGProps<SVGSVGElement>) {
             offset="1"
             className="text-white dark:text-black"
             stopColor="currentColor"
-            stop-opacity="0"
+            stopOpacity="0"
           ></stop>
         </linearGradient>
       </defs>

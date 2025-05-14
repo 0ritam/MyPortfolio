@@ -7,7 +7,7 @@ export function ExpressIcon(props: SVGProps<SVGSVGElement>) {
       width="1em"
       height="1em"
       viewBox="0 0 128 128"
-      className="text-black dark:text-white"
+      className="text-white dark:text-white"
       {...props}
     >
       <path
