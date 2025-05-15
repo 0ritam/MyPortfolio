@@ -19,7 +19,7 @@ export const GithubStats = async () => {
         <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black via-black/80 to-transparent pb-6">
           <div className="flex flex-row justify-center gap-x-12 text-neutral-300">
             <GitHubStatsData label="Stars" value={stars} />
-            <GitHubStatsData label="Followers" value={followers} />
+            {/* <GitHubStatsData label="Followers" value={followers} /> */}
             <GitHubStatsData label="Repos" value={public_repos} />
           </div>
         </div>
