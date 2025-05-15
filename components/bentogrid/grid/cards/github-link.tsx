@@ -1,7 +1,6 @@
 import Image from 'next/image';
 
 import catImg from './cat.jpg';
-import { GithubIcon } from '@/components/icons';
 import { GithubLogo } from '@phosphor-icons/react/dist/ssr'
 
 const GithubLink = () => {
