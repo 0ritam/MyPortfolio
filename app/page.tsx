@@ -8,9 +8,8 @@ import HeroSpace from "@/components/bentogrid/HeroSpace/Hero";
 import About from "@/components/bentogrid/About/About";
 import Featuregrid from "@/components/bentogrid/grid/features";
 import Projects from "@/components/bentogrid/Projects/Projects";
-import LatestWork from "@/components/bentogrid/LatestWork/Latest";
-import CV from "@/components/bentogrid/Cv/Cv";
 import Research from "@/components/bentogrid/ResearchBlock/Research";
+import WorkAndCv from "@/components/bentogrid/LatestWork/WorkAndCv";
 
 export default function BentoGridDemo() {
   return (
@@ -67,10 +66,9 @@ export default function BentoGridDemo() {
 
           {/* Right Side Sections */}
           <div className="space-y-4 lg:col-span-1">
-            <div className="grid grid-cols-3 gap-4 lg:grid-cols-1">
-              <LatestWork className="h-[160px]" />
-              <CV className="h-[160px]" />
-              <Research className="h-[160px]" />
+            <div className="flex flex-col gap-4">
+              <WorkAndCv />
+              <Research className="h-[120px]" />
             </div>
           </div>
         </div>

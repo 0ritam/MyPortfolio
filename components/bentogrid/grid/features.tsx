@@ -1,5 +1,5 @@
 import { BentoGridItem } from '@/components/ui/bento-grid';
-import { IconBriefcase, IconCode, IconBrandGithub, IconMusic, IconLink, IconStack, IconMessage, IconBook } from '@tabler/icons-react';
+import { IconLink} from '@tabler/icons-react';
 import { StacksCard } from './cards/stack-card';
 import GithubLink from './cards/github-link';
 import { GithubStats } from './cards/github-stats';
