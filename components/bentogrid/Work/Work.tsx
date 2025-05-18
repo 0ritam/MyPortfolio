@@ -5,7 +5,7 @@ const Skeleton = () => (
   <div className="w-full h-full rounded-xl bg-gradient-to-br from-neutral-900 to-neutral-800"></div>
 );
 
-export default function WorkAndCv({ className }: { className?: string }) {
+export default function Work({ className }: { className?: string }) {
   return (
     <BentoGridItem
       title="Work & Experience"
@@ -34,7 +34,7 @@ export default function WorkAndCv({ className }: { className?: string }) {
           </div>
         </div>      }
       icon={<IconEye className="h-4 w-4 text-neutral-500" />}
-      className={`${className} h-[380px]`}
+      className={`${className} h-[400px]`}
     />
   );
 }
