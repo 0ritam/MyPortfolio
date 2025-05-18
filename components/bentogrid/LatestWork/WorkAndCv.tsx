@@ -34,7 +34,7 @@ export default function WorkAndCv({ className }: { className?: string }) {
           </div>
         </div>      }
       icon={<IconEye className="h-4 w-4 text-neutral-500" />}
-      className={`${className} h-[360px]`}
+      className={`${className} h-[380px]`}
     />
   );
 }

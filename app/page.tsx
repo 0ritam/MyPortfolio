@@ -47,7 +47,7 @@ export default function BentoGridDemo() {
       </header>
 
       {/* Main Content */}
-      <main className="max-w-7xl mx-auto px-4 sm:px-8">
+      <main className="max-w-6xl mx-auto px-4 sm:px-8">
         {/* Hero Space */}
         <HeroSpace />
 
