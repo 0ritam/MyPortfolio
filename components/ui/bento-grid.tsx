@@ -10,7 +10,7 @@ export const BentoGrid = ({
   return (
     <div
       className={cn(
-        "mx-auto grid max-w-8xl grid-cols-1 gap-2 md:auto-rows-[18rem] md:grid-cols-3",
+        "mx-auto grid max-w-8xl grid-cols-1 gap-2 md:auto-rows-[18rem] md:grid-cols-3 bg-black font-[var(--font-crimson-text)] text-white",
         className,
       )}
     >
@@ -46,18 +46,18 @@ export const BentoGridItem = ({
       {(title || description) && (
         <div className="p-4">
           {title && (
-            <div className="font-sans font-bold text-neutral-600 dark:text-neutral-200">
+            <div className="font-[var(--font-caveat)] text-2xl text-white">
               {title}
             </div>
           )}
           {description && (
-            <div className="font-sans text-xs font-normal text-neutral-600 dark:text-neutral-300">
+            <div className="font-[var(--font-crimson-text)] text-sm text-white">
               {description}
             </div>
           )}
         </div>
       )}
-      <div className="flex-1">{children}</div>
+      <div className="flex-1 font-[var(--font-crimson-text)] text-white">{children}</div>
     </div>
   );
 };
