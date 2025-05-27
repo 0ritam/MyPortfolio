@@ -19,15 +19,13 @@ const TechStack = () => (
 export default function About({ className }: { className?: string }) {
   return (
     <BentoGridItem
-      title="About Me"
+      title="Full-Stack Developer"
       description={
         <div className="flex-1 space-y-4 text-white">
-          <h2 className="text-xs opacity-70 font-[var(--font-crimson-text)]">
-            Full-Stack Developer
-          </h2>
+          
 
-          <div className="font-[var(--font-caveat)] text-2xl">
-            Hello, welcome to my little corner on the web! 👋
+          <div className="font-[var(--font-caveat)]">
+            <h2>Hello, welcome to my little corner on the web! 👋</h2>
           </div>
 
           <div className="font-[var(--font-crimson-text)]">

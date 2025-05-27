@@ -1,40 +1,53 @@
 import { BentoGridItem } from '@/components/ui/bento-grid';
-import { IconFileText, IconEye } from '@tabler/icons-react';
-
-const Skeleton = () => (
-  <div className="w-full h-full rounded-xl bg-gradient-to-br from-neutral-900 to-neutral-800"></div>
-);
+import { IconSchool } from '@tabler/icons-react';
 
 export default function Work({ className }: { className?: string }) {
   return (
     <BentoGridItem
-      title="Work & Experience"
+      title="Education"
       description={
-        <div className="grid grid-cols-2 gap-4">
-          {/* Latest Work Section */}
-          <div className="space-y-2">
-            <div className="font-medium">Latest Work</div>
-            <div className="text-sm text-neutral-400">Recent development projects</div>
-            <div className="h-20">
-              <Skeleton />
+        <div className="flex flex-col space-y-8 relative px-4 py-2">
+          {/* MCA Education */}
+          <div className="flex items-start space-x-4">
+            <div className="relative flex items-center">
+              <div className="w-[10px] h-[10px] text-xs font-bold text-white">×</div>
+            </div>
+            <div className="flex-1">
+              <div className="flex items-center space-x-1">
+                <IconSchool className="h-5 w-5 text-white" />
+                <h3 className="font-medium text-lg">
+                  <span className="hidden sm:inline">MCA</span>
+                  <span className="sm:hidden">Master of Computer Applications</span>
+                </h3>
+              </div>
+              <p className="text-neutral-400">Christ University</p>
+              <p className="text-sm text-neutral-500">2024 - Present</p>
+              <p className="text-sm text-neutral-400 mt-1">Bangalore, India</p>
             </div>
           </div>
 
-          {/* CV Section */}
-          <div className="space-y-2">
-            <div className="font-medium">Curriculum Vitae</div>
-            <div className="text-sm text-neutral-400">View my experience</div>
-            <a 
-              href="/cv.pdf" 
-              className="mt-2 inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-neutral-800 hover:bg-neutral-700 transition-colors text-neutral-200"
-            >
-              <IconFileText className="h-4 w-4" />
-              <span>View CV</span>
-            </a>
+          {/* BCA Education */}
+          <div className="flex items-start space-x-4">
+            <div className="relative flex items-center">
+              <div className="w-[10px] h-[10px] text-xs font-bold text-white">×</div>
+            </div>
+            <div className="flex-1">
+              <div className="flex items-center space-x-1">
+                <IconSchool className="h-5 w-5 text-white" />
+                <h3 className="font-medium text-lg">
+                  <span className="hidden sm:inline">BCA</span>
+                  <span className="sm:hidden">Bachelor of Computer Applications</span>
+                </h3>
+              </div>
+              <p className="text-neutral-400">Manipal University</p>
+              <p className="text-sm text-neutral-500">2021 - 2024</p>
+              <p className="text-sm text-neutral-400 mt-1">Jaipur, India</p>
+            </div>
           </div>
-        </div>      }
-      icon={<IconEye className="h-4 w-4 text-neutral-500" />}
-      className={`${className} h-[400px]`}
+        </div>
+      }
+      icon={<IconSchool className="h-4 w-4 text-neutral-500" />}
+      className={`${className}`}
     />
   );
 }

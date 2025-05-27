@@ -1,9 +1,4 @@
 import React from "react";
-import {
-  IconBrandTwitter,
-  IconBrandLinkedin,
-  IconMail,
-} from "@tabler/icons-react";
 import HeroSpace from "@/components/bentogrid/HeroSpace/Hero";
 import About from "@/components/bentogrid/About/About";
 import Featuregrid from "@/components/bentogrid/grid/features";
@@ -15,35 +10,11 @@ export default function BentoGridDemo() {
   return (
     <div className="min-h-screen bg-black text-white">
       {/* Header Bar */}
-      <header className="w-full px-4 sm:px-6 py-2 flex flex-col sm:flex-row justify-between items-center border-b border-neutral-800 mb-4 sm:mb-8 gap-2">
-        <div>
+      <header className="w-full px-4 sm:px-6 py-2 flex flex-col sm:flex-row mb-4 sm:mb-8 gap-2">
+        {/* <div>
           <h1 className="text-xl font-semibold text-center sm:text-left">Ritam Maity</h1>
           <p className="text-sm text-neutral-400 text-center sm:text-left">Software Developer</p>
-        </div>
-        <div className="flex items-center gap-4">
-          <a
-            href="https://twitter.com/yourusername"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-neutral-400 hover:text-white transition-colors"
-          >
-            <IconBrandTwitter className="h-5 w-5" />
-          </a>
-          <a
-            href="https://linkedin.com/in/yourusername"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-neutral-400 hover:text-white transition-colors"
-          >
-            <IconBrandLinkedin className="h-5 w-5" />
-          </a>
-          <a
-            href="mailto:your.email@example.com"
-            className="text-neutral-400 hover:text-white transition-colors"
-          >
-            <IconMail className="h-5 w-5" />
-          </a>
-        </div>
+        </div> */}
       </header>
 
       {/* Main Content */}
@@ -68,7 +39,7 @@ export default function BentoGridDemo() {
           <div className="space-y-4 lg:col-span-1">
             <div className="flex flex-col gap-4">
               <Work />
-              <Viewcv className="h-[100px]" />
+              <Viewcv className="h-[150px]" />
             </div>
           </div>
         </div>

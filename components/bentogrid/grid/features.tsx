@@ -5,6 +5,7 @@ import GithubLink from './cards/github-link';
 import { GithubStats } from './cards/github-stats';
 import { LinksCard } from './cards/links';
 import Research from './cards/research';
+import Image from 'next/image';
 
 
 export default function Featuregrid({ className }: { className?: string }) {
@@ -23,7 +24,8 @@ export default function Featuregrid({ className }: { className?: string }) {
         </div>
       </div>
 
-      {/* Second row - Links section */}      <div className="mt-3 grid grid-cols-1 sm:grid-cols-3 gap-3">
+      {/* Second row - Links section */}      
+      <div className="mt-3 grid grid-cols-1 sm:grid-cols-3 gap-3">
         <div className="sm:col-span-2">
           <BentoGridItem className="h-[160px]">
             <LinksCard />
@@ -31,11 +33,14 @@ export default function Featuregrid({ className }: { className?: string }) {
         </div>
         <div className="sm:col-span-1">
           <BentoGridItem
-            title="Link"
-            description="Small link widget"
-            icon={<IconLink className="h-4 w-4 text-neutral-500" />}
-            className="h-[160px]"
-          />
+            className="h-[160px] relative overflow-hidden"
+          >            <Image
+              src="/luffy2.jpg"
+              alt="Luffy Image"
+              fill
+              className="object-cover opacity-80 hover:opacity-100 transition-opacity"
+            />
+          </BentoGridItem>
         </div>
       </div>
 
