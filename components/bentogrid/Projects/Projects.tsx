@@ -3,16 +3,16 @@ import Link from 'next/link';
 
 const projects = [
 	{
-		title: 'Atomix UI',
-		period: 'Oct 2024 - Nov 2024',
+		title: 'FinLit',
+		period: 'Dec 2024 - March 2024',
 		description:
 			'Redefined UI building for developers. Quickly add components, themes, and responsive layouts to your app at any scale',
 		technologies: ['Next.js', 'TypeScript', 'TailwindCSS', 'Framer Motion'],
 		link: '/projects',
 	},
 	{
-		title: 'Quick Bid',
-		period: 'Oct 2024 - Oct 2024',
+		title: 'Ai Podcast Clipper',
+		period: 'May 2024 - June 2024',
 		description:
 			'A fast, intuitive platform where users can bid, win, and save on top products and services in real-time.',
 		technologies: ['Next.js', 'TypeScript', 'Docker', 'Prisma', 'Supabase'],
