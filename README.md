@@ -82,18 +82,6 @@ This portfolio is optimized for deployment on Vercel:
 3. Add your environment variables
 4. Deploy!
 
-## 📄 License
-
-This project is open source and available under the MIT License.
-
-## 🤝 Connect with Me
-
-- LinkedIn: [Ritam Maity](https://www.linkedin.com/in/dev-rmaity)
-- Twitter: [@dev_ritam](https://x.com/dev_ritam)
-- GitHub: [@0ritam](https://github.com/0ritam)
-- Discord: [Play Around](https://discord.com/channels/@me)
-- Substack: [My Notes](https://substack.com/@ritammaity/notes)
-
 ---
 
 Built with 💻 by Ritam Maity
