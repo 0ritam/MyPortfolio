@@ -12,7 +12,7 @@ const projects = [
 	},
 	{
 		title: 'Ai Podcast Clipper',
-		period: 'May 2024 - June 2024',
+		period: 'May 2024 - Present',
 		description:
 			'A fast, intuitive platform where users can bid, win, and save on top products and services in real-time.',
 		technologies: ['Next.js', 'TypeScript', 'Docker', 'Prisma', 'Supabase'],

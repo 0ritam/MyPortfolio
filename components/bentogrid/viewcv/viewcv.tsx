@@ -6,10 +6,10 @@ import { IconFileText, IconDownload } from '@tabler/icons-react';
 
 export default function Viewcv({ className }: { className?: string }) {
   const handleDownload = () => {
-    // The CV file should be placed in the public folder
+    
     const link = document.createElement('a');
-    link.href = '/cv.pdf';  // Updated to match the actual filename in public folder
-    link.download = 'RitamMaity.pdf';  // This will be the downloaded file name
+    link.href = '/cv.pdf';  
+    link.download = 'RitamMaity.pdf';  
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
