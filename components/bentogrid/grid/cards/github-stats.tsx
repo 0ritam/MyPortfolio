@@ -1,7 +1,7 @@
 import { getGithubRepositories, getGithubUserData } from '@/lib/github'
 
 export const GithubStats = async () => {
-  const { followers, public_repos } = await getGithubUserData()
+  const { public_repos } = await getGithubUserData()
   const repositories = await getGithubRepositories()
   const stars = repositories.reduce(
     (acc, repo) => acc + repo.stargazers_count,

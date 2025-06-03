@@ -1,7 +1,6 @@
 import {
   LinkedinLogo,
   XLogo,
-  RedditLogo,
   DiscordLogo,
   Bookmark
 } from '@phosphor-icons/react/dist/ssr'
@@ -34,7 +33,7 @@ export const LinksCard = () => {
         className="flex transform-gpu flex-col items-center justify-center rounded-lg bg-[#FF4500] text-white duration-500 hover:scale-[.97]"
       >
         <Bookmark weight="fill" className="text-2xl" />
-        <p className="text-[12px] opacity-50">"What is this?"</p>
+        <p className="text-[12px] opacity-50">&quot;What is this?&quot;</p>
       </a>
       <a
         href="https://discord.com/channels/@me"
