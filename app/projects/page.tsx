@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 import { IconExternalLink, IconBrandGithub } from '@tabler/icons-react';
 
 interface Project {
@@ -16,25 +17,25 @@ interface Project {
 export default function ProjectsPage() {
   const projects: Project[] = [
     {
-      title: "Atomix UI",
-      period: "Oct 2024 - Nov 2024",
-      description: "Redefined UI building for developers. Quickly add components, themes, and responsive layouts to your app at any scale",
-      image: "/projects/atomix.png",
-      technologies: ["Next.js", "TypeScript", "TailwindCSS", "Framer Motion"],
+      title: "FinLit",
+      period: "Dec 2024 - March 2025",
+      description: "A comprehensive financial literacy platform with integrated fraud detection capabilities, built using modern web technologies and machine learning.",
+      image: "/Finlit.png",
+      technologies: ["React.js", "TypeScript", "TailwindCSS", "Framer Motion", "Python"],
       links: {
-        github: "https://github.com/yourusername/atomix-ui",
-        live: "https://atomix-ui.com"
+        github: "https://github.com/0ritam/FinLit",
+        live: "https://finlit-mu.vercel.app/"
       }
     },
     {
-      title: "Quick Bid",
-      period: "Oct 2024 - Oct 2024",
-      description: "A fast, intuitive platform where users can bid, win, and save on top products and services in real-time.",
-      image: "/projects/quickbid.png",
-      technologies: ["Next.js", "TypeScript", "Docker", "Prisma", "Supabase"],
+      title: "Hirex",
+      period: "Oct 2024 - Nov 2024",
+      description: "Hirex is a modern job portal providing a seamless user experience for job seekers and recruiters, featuring job search, filtering and real-time data management.",
+      image: "/hirex.png",
+      technologies: ["React.js", "ShadCn Ui", "TailwindCss", "Clerk", "Supabase"],
       links: {
-        github: "https://github.com/yourusername/quick-bid",
-        live: "https://quickbid.com"
+        github: "https://github.com/0ritam/Hirex",
+        live: "https://hirex-woad.vercel.app/"
       }
     }
   ];
@@ -56,11 +57,13 @@ export default function ProjectsPage() {
           {projects.map((project, index) => (
             <div key={index} className="group relative rounded-xl border border-neutral-800 bg-neutral-900/50 p-6 hover:bg-neutral-900/80 transition-all">
               {/* Project Image */}
-              <div className="aspect-[16/9] overflow-hidden rounded-lg mb-6">
-                <img 
+              <div className="aspect-[16/9] overflow-hidden rounded-lg mb-6 relative">
+                <Image 
                   src={project.image} 
                   alt={project.title}
-                  className="w-full h-full object-cover"
+                  fill
+                  className="object-cover"
+                  priority={index === 0}
                 />
               </div>
 

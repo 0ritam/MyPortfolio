@@ -26,6 +26,7 @@ export const BentoGridItem = ({
   header,
   icon,
   children,
+  onClick,
 }: {
   className?: string;
   title?: string | React.ReactNode;
@@ -33,9 +34,11 @@ export const BentoGridItem = ({
   header?: React.ReactNode;
   icon?: React.ReactNode;
   children?: React.ReactNode;
+  onClick?: () => void;
 }) => {
   return (
     <div
+      onClick={onClick}
       className={cn(
         "group/bento shadow-input row-span-1 flex flex-col rounded-xl border dark:border-white/[0.2] dark:bg-black dark:shadow-none overflow-hidden",
         className,
