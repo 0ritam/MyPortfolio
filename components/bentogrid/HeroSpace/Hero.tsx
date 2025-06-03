@@ -13,7 +13,6 @@ export default function HeroSpace() {
               'En|',
               'Tech stuff enthusiast',
               'Nature admirer',
-              'Enjoyer of good books',
               'Full stack developer'
             ]}
             cursor

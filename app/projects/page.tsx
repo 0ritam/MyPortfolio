@@ -105,9 +105,9 @@ export default function ProjectsPage() {
 
         {/* Show More Button */}
         <div className="flex justify-center mt-8">
-          <button className="px-6 py-3 rounded-xl border border-neutral-800 hover:bg-neutral-900 transition-colors">
+          {/* <button className="px-6 py-3 rounded-xl border border-neutral-800 hover:bg-neutral-900 transition-colors">
             Show More
-          </button>
+          </button> */}
         </div>
       </div>
     </div>
