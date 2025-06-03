@@ -2,7 +2,7 @@
 
 A modern, responsive portfolio website built with Next.js 14, TypeScript, and TailwindCSS. This portfolio showcases my projects, skills, and professional journey through an elegant and interactive interface.
 
-![Portfolio Preview](public/Finlit.png)
+![Portfolio Preview](public/portfolio.png)
 
 ## 🌟 Features
 
