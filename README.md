@@ -52,6 +52,39 @@ A modern, responsive portfolio website built with Next.js 14, TypeScript, and Ta
 
 5. Open [http://localhost:3000](http://localhost:3000) in your browser
 
+<<<<<<< HEAD
+=======
+## 📁 Project Structure
+
+```
+portfolio/
+├── app/                   # Next.js app directory
+├── components/           
+│   ├── bentogrid/        # Main layout components
+│   ├── icons/            # Custom icons and SVGs
+│   └── ui/               # Reusable UI components
+├── lib/                  # Utility functions
+└── public/              # Static assets
+```
+
+## 🎨 Customization
+
+1. **Personal Information**: Update your details in `app/page.tsx`
+2. **Projects**: Modify the projects array in `app/projects/page.tsx`
+3. **CV**: Replace `public/cv.pdf` with your own CV
+4. **Social Links**: Update links in `components/bentogrid/grid/cards/links.tsx`
+5. **GitHub Stats**: Configure GitHub integration in `lib/github.ts`
+
+## 🚀 Deployment
+
+This portfolio is optimized for deployment on Vercel:
+
+1. Push your code to GitHub
+2. Import your repository on [Vercel](https://vercel.com)
+3. Add your environment variables
+4. Deploy!
+
+>>>>>>> eb02157bd73407f7c1b7582660f27444c3d0f48e
 ---
 
 Built with 💻 by Ritam Maity
