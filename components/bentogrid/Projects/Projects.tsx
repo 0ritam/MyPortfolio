@@ -23,25 +23,24 @@ const projects = [
 export default function Projects({ className }: { className?: string }) {
 	return (
 		<BentoGridItem
-			// title="Projects"
 			description={
-				<div className="space-y-4">
-					<div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+				<div className="flex flex-col h-full">
+					{/* Project Grid - 1 column on mobile, 2 on desktop */}
+					<div className="grid grid-cols-1 sm:grid-cols-2 gap-4 flex-1">
 						{projects.map((project, index) => (
 							<div
 								key={index}
-								className="group relative rounded-xl border border-neutral-800 bg-neutral-900/50 p-4 hover:bg-neutral-900 transition-all pointer-events-none"
+								className={`group relative rounded-xl border border-neutral-800 bg-neutral-900/50 p-4 hover:bg-neutral-900 transition-all ${
+									index === 1 ? 'hidden sm:block' : ''
+								}`}
 							>
-								{/* Transparent Overlay */}
-								<div className="absolute inset-0 bg-neutral-950/50 rounded-xl group-hover:bg-neutral-950/30 transition-all z-10" />
-
 								{/* Empty Space for Image */}
-								<div className="aspect-video w-full overflow-hidden rounded-lg mb-4 relative">
+								<div className="aspect-video w-full overflow-hidden rounded-lg mb-4">
 									<div className="w-full h-full bg-gradient-to-br from-neutral-900 to-neutral-800" />
 								</div>
 
 								{/* Project Info */}
-								<div className="space-y-2 relative z-0">
+								<div className="space-y-2">
 									<div className="flex items-center justify-between">
 										<h3 className="text-lg font-medium text-white">
 											{project.title}
@@ -71,12 +70,12 @@ export default function Projects({ className }: { className?: string }) {
 					</div>
 
 					{/* Show More Button */}
-					<div className="flex justify-center pt-2">
+					<div className="mt-4 sticky bottom-0 bg-black/80 backdrop-blur-sm pt-2">
 						<Link
 							href="/projects"
-							className="inline-flex items-center justify-center px-4 py-2 rounded-xl border border-neutral-800 text-sm text-neutral-400 hover:bg-neutral-900 hover:text-white transition-all pointer-events-auto"
+							className="flex w-full items-center justify-center px-4 py-3 rounded-xl border border-neutral-800 text-sm text-neutral-400 hover:bg-neutral-900 hover:text-white transition-all"
 						>
-							Show More →
+							View All Projects →
 						</Link>
 					</div>
 				</div>
