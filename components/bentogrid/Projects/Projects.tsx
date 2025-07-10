@@ -11,11 +11,11 @@ const projects = [
 		link: '/projects',
 	},
 	{
-		title: 'Ai Podcast Clipper',
-		period: 'May 2024 - Present',
+		title: 'Prompt2Insight',
+		period: 'June 2025 - Present',
 		description:
-			'A fast, intuitive platform where users can bid, win, and save on top products and services in real-time.',
-		technologies: ['Next.js', 'TypeScript', 'Docker', 'Prisma', 'Supabase'],
+			'AI-powered dashboard designed to provide users with real-time data extraction, analysis, and visualization from multiple online sources',
+		technologies: ['Next.js', 'TypeScript', 'Python', 'Prisma'],
 		link: '/projects',
 	},
 ];
