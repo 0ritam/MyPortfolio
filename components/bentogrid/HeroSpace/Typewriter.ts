@@ -1,3 +1,3 @@
 'use client'
 
-export * from 'react-simple-typewriter'
+export { Typewriter } from 'react-simple-typewriter'

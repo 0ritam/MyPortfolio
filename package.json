@@ -19,7 +19,7 @@
     "date-fns": "^4.1.0",
     "lucide-react": "^0.508.0",
     "motion": "^12.10.1",
-    "next": "15.3.2",
+    "next": "^16.2.6",
     "phosphor-icons": "^1.4.2",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
@@ -33,7 +33,7 @@
     "@types/react": "^19.1.4",
     "@types/react-dom": "^19.1.5",
     "eslint": "^9",
-    "eslint-config-next": "15.3.2",
+    "eslint-config-next": "^16.2.6",
     "tailwindcss": "^4",
     "tw-animate-css": "^1.2.9",
     "typescript": "^5"
