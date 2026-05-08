@@ -1,12 +1,14 @@
 import React from 'react';
 import Image from 'next/image';
-import { IconExternalLink, IconBrandGithub } from '@tabler/icons-react';
+import Link from 'next/link';
+import { IconExternalLink, IconBrandGithub, IconArrowLeft } from '@tabler/icons-react';
 
 interface Project {
   title: string;
-  period: string;
+  subtitle?: string;
+  period?: string;
   description: string;
-  image: string;
+  image?: string;
   technologies: string[];
   links: {
     github?: string;
@@ -28,6 +30,16 @@ export default function ProjectsPage() {
       }
     },
     {
+      title: "Prompt2Insight",
+      subtitle: "AI-Powered E-commerce Intelligence Platform",
+      description: "A full-stack application that transforms natural language queries into intelligent product discoveries with dynamic chart visualizations and conversational insights.",
+      image: "/Prompt2insight.png",
+      technologies: ["Next.js", "TypeScript", "Python", "Prisma"],
+      links: {
+        github: "https://github.com/0ritam/Prompt2Insight"
+      }
+    },
+    {
       title: "Hirex",
       period: "Oct 2024 - Nov 2024",
       description: "Hirex is a modern job portal providing a seamless user experience for job seekers and recruiters, featuring job search, filtering and real-time data management.",
@@ -37,12 +49,53 @@ export default function ProjectsPage() {
         github: "https://github.com/0ritam/Hirex",
         live: "https://hirex-woad.vercel.app/"
       }
+    },
+    {
+      title: "AI Music SaaS",
+      subtitle: "AI-Powered Music Generation Platform",
+      description: "Transform your ideas into professional-quality music using advanced AI technology. No musical experience required — just describe what you want to hear.",
+      image: "/Musicsaas.png",
+      technologies: ["Next.js", "TypeScript", "TailwindCSS"],
+      links: {
+        github: "https://github.com/0ritam/AI-MusicGen-Saas",
+        live: "https://ai-music-gen-saas-frontend.vercel.app/"
+      }
+    },
+    {
+      title: "Vehicle Service Management System",
+      subtitle: "Workshop operations & analytics platform",
+      description: "A full-stack workshop management application for tracking vehicle service orders, managing parts inventory, and visualizing revenue analytics for streamlined operations.",
+      image: "/Vehicle.png",
+      technologies: ["Next.js", "TypeScript", "Prisma"],
+      links: {
+        github: "https://github.com/0ritam/Vehicle-Management-System",
+        live: "https://vehicle-management-system-gamma.vercel.app/"
+      }
+    },
+    {
+      title: "XAI Dashboard",
+      subtitle: "Explainable AI for student performance prediction",
+      description: "An explainable ML dashboard predicting student performance with 85%+ accuracy via XGBoost on 32K+ OULAD records, served through FastAPI with SHAP and LIME for transparent, interpretable insights.",
+      image: "/output.png",
+      technologies: ["Python", "FastAPI", "XGBoost", "SHAP", "scikit-learn"],
+      links: {
+        github: "https://github.com/0ritam/XAI-Dashboard"
+      }
     }
   ];
 
   return (
     <div className="min-h-screen bg-black text-white py-8">
       <div className="max-w-5xl mx-auto px-4 sm:px-8">
+        {/* Back Button */}
+        <Link
+          href="/"
+          className="inline-flex items-center gap-2 px-4 py-2 mb-8 rounded-xl border border-neutral-800 bg-neutral-900/50 text-sm text-neutral-300 hover:bg-neutral-900 hover:border-neutral-600 hover:text-white transition-all"
+        >
+          <IconArrowLeft className="h-4 w-4" />
+          Back
+        </Link>
+
         {/* Portfolio Header */}
         <div className="text-center mb-12">
           <div className="text-sm text-neutral-400 mb-2">Portfolio Showcase</div>
@@ -58,22 +111,31 @@ export default function ProjectsPage() {
             <div key={index} className="group relative rounded-xl border border-neutral-800 bg-neutral-900/50 p-6 hover:bg-neutral-900/80 transition-all">
               {/* Project Image */}
               <div className="aspect-[16/9] overflow-hidden rounded-lg mb-6 relative">
-                <Image 
-                  src={project.image} 
-                  alt={project.title}
-                  fill
-                  className="object-cover"
-                  priority={index === 0}
-                />
+                {project.image ? (
+                  <Image
+                    src={project.image}
+                    alt={project.title}
+                    fill
+                    className="object-cover"
+                    priority={index === 0}
+                  />
+                ) : (
+                  <div className="w-full h-full bg-gradient-to-br from-neutral-900 to-neutral-800" />
+                )}
               </div>
 
               {/* Project Info */}
               <div className="space-y-4">
-                <div className="flex items-center justify-between">
-                  <h3 className="text-2xl font-semibold">{project.title}</h3>
-                  <div className="flex gap-2">
+                <div className="flex items-start justify-between gap-3">
+                  <div className="min-w-0">
+                    <h3 className="text-2xl font-semibold">{project.title}</h3>
+                    {project.subtitle && (
+                      <p className="text-sm text-neutral-500 mt-1">{project.subtitle}</p>
+                    )}
+                  </div>
+                  <div className="flex gap-2 shrink-0">
                     {project.links.github && (
-                      <a href={project.links.github} target="_blank" rel="noopener noreferrer" 
+                      <a href={project.links.github} target="_blank" rel="noopener noreferrer"
                          className="p-2 rounded-full hover:bg-neutral-800">
                         <IconBrandGithub className="h-5 w-5" />
                       </a>
@@ -87,7 +149,10 @@ export default function ProjectsPage() {
                   </div>
                 </div>
 
-                <div className="text-sm text-neutral-400">{project.period}</div>
+                {project.period && (
+                  <div className="text-sm text-neutral-400">{project.period}</div>
+                )}
+
                 <p className="text-neutral-300">{project.description}</p>
 
                 {/* Technologies */}

@@ -8,8 +8,8 @@ export default function Viewcv({ className }: { className?: string }) {
   const handleDownload = () => {
     
     const link = document.createElement('a');
-    link.href = '/cv.pdf';  
-    link.download = 'RitamMaity.pdf';  
+    link.href = '/FullStackResume.pdf';
+    link.download = 'RitamMaity.pdf';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);

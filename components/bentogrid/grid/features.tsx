@@ -34,8 +34,8 @@ export default function Featuregrid({ className }: { className?: string }) {
           <BentoGridItem
             className="h-[160px] relative overflow-hidden"
           >            <Image
-              src="/luffy2.jpg"
-              alt="Luffy Image"
+              src="/profilePic.jpeg"
+              alt="Profile picture"
               fill
               className="object-cover opacity-80 hover:opacity-100 transition-opacity"
             />
